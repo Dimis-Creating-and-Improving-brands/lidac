@@ -177,6 +177,22 @@ body a.btn {
     right: 0;
   }
 }
+@media (max-width: 1280px) {
+  .tree-columns .col {
+    width: 45%;
+  }
+  .tree-columns .tree {
+    width: 10%;
+    height: 100vh;
+    overflow-x: visible;
+    display: flex;
+    justify-content: center;
+  }
+  .tree-columns .tree img {
+    height: 100%;
+    width: auto;
+  }
+}
 .positioned-block > .container .info {
   display: flex;
   flex-direction: column;
