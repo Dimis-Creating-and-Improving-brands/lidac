@@ -182,6 +182,22 @@ body a.btn {
   padding: 1rem;
   box-sizing: border-box;
   overflow: hidden;
+  position: relative;
+}
+.block .background {
+  height: 100%;
+  width: 100%;
+  position: absolute !important;
+  z-index: 0 !important;
+}
+.block .background video,
+.block .background img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.block * {
+  z-index: 1;
 }
 .block-1 h1 {
   font-size: 4rem;
@@ -268,6 +284,30 @@ body a.btn {
   width: 66rem;
 }
 .block-2 p:first-of-type {
+  color: #FFFFFF;
+}
+.block-3 h2 {
+  font-size: 4.125rem;
+  line-height: 1.3;
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 3rem;
+  max-width: 100%;
+  width: 51rem;
+}
+.block-3 p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 8rem;
+  max-width: 100%;
+  margin-block: 0;
+  color: #0BB0E3;
+  width: 29rem;
+}
+.block-3 p:first-of-type {
   color: #FFFFFF;
 }
 /*# sourceMappingURL=main.css.map */
