@@ -41,6 +41,20 @@ html, body{
   }
 }
 
+.navbar {
+  position: absolute;
+  z-index: 100;
+  top: 5rem;
+  left: 5rem;
+  img {
+    height: 3rem;
+  }
+  @media(max-width: 767px){
+    top: 2rem;
+    left: 2rem;
+  }
+}
+
 .positioned-block {
   margin: 0;
   height: 100vh;
@@ -278,7 +292,6 @@ html, body{
     z-index: 1;
   }
 }
-
 
 .block-1 {
   h1{

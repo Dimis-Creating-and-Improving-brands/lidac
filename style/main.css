@@ -53,6 +53,21 @@ body a.btn {
     font-size: 16px;
   }
 }
+.navbar {
+  position: absolute;
+  z-index: 100;
+  top: 5rem;
+  left: 5rem;
+}
+.navbar img {
+  height: 3rem;
+}
+@media (max-width: 767px) {
+  .navbar {
+    top: 2rem;
+    left: 2rem;
+  }
+}
 .positioned-block {
   margin: 0;
   height: 100vh;
