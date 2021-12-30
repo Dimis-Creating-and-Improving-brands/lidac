@@ -183,7 +183,7 @@ body a.btn {
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  padding: 1rem;
+  padding: 1.5rem;
   box-sizing: border-box;
   overflow: hidden;
   position: relative;
@@ -291,7 +291,7 @@ body a.btn {
     width: 25rem;
     height: 25rem;
     max-width: 100%;
-    max-height: calc(100vw - 2rem);
+    max-height: calc(100vw - 3rem);
   }
 }
 .block-2 {
@@ -320,6 +320,12 @@ body a.btn {
 }
 .block-2 p:first-of-type {
   color: #FFFFFF;
+}
+@media (max-width: 840px) {
+  .block-2 {
+    height: auto;
+    min-height: 100vh;
+  }
 }
 .block-3 h2 {
   font-size: 4.125rem;
