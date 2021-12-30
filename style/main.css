@@ -229,8 +229,8 @@ body a.btn {
   width: 100%;
 }
 .block-1 .cubes .cube {
-  width: 26rem;
-  height: 26rem;
+  width: 24rem;
+  height: 24rem;
   position: relative;
   display: flex;
   align-items: center;
@@ -262,6 +262,37 @@ body a.btn {
   display: block;
   font-size: 3rem;
   font-weight: 500;
+}
+@media (max-width: 1366px) {
+  .block-1 .cubes .cube {
+    width: 22rem;
+    height: 22rem;
+  }
+}
+@media (max-width: 1023px) {
+  .block-1 .cubes {
+    justify-content: space-between;
+  }
+  .block-1 .cubes .cube {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+@media (max-width: 840px) {
+  .block-1 {
+    height: auto;
+  }
+  .block-1 .cubes {
+    flex-direction: column;
+    align-items: center;
+  }
+  .block-1 .cubes .cube {
+    margin-bottom: 3rem;
+    width: 25rem;
+    height: 25rem;
+    max-width: 100%;
+    max-height: calc(100vw - 2rem);
+  }
 }
 .block-2 {
   background: #0B0B0B;
