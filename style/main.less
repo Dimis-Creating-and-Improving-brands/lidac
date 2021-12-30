@@ -197,6 +197,39 @@ html, body{
       }
     }
   }
+
+  @media(max-width: 1023px) {
+    flex-direction: column;
+    align-items: center;
+    .col, .tree {
+      max-width: 100%;
+      width: 28rem;
+      box-sizing: border-box;
+      height: auto;
+      img {
+        width: 100%;
+        max-width: 100%;
+        min-height: unset;
+        height: 30rem;
+      }
+    }
+    .col:nth-of-type(n) .item:nth-of-type(n) {
+      margin-right: auto !important;
+      margin-left: auto !important;
+      position: unset !important;
+      max-width: 100% !important;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2rem;
+      h2 {
+        justify-content: center;
+        img {
+          display: none;
+        }
+      }
+    }
+  }
 }
 
 .positioned-block > .container .info {
@@ -205,6 +238,8 @@ html, body{
   justify-content: center;
   align-items: center;
   padding: 1rem 3rem 3rem;
+  width: 100vw;
+  box-sizing: border-box;
   p {
     width: 50rem;
     max-width: 100%;

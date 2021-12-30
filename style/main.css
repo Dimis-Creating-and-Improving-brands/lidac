@@ -193,12 +193,50 @@ body a.btn {
     width: auto;
   }
 }
+@media (max-width: 1023px) {
+  .tree-columns {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tree-columns .col,
+  .tree-columns .tree {
+    max-width: 100%;
+    width: 28rem;
+    box-sizing: border-box;
+    height: auto;
+  }
+  .tree-columns .col img,
+  .tree-columns .tree img {
+    width: 100%;
+    max-width: 100%;
+    min-height: unset;
+    height: 30rem;
+  }
+  .tree-columns .col:nth-of-type(n) .item:nth-of-type(n) {
+    margin-right: auto !important;
+    margin-left: auto !important;
+    position: unset !important;
+    max-width: 100% !important;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .tree-columns .col:nth-of-type(n) .item:nth-of-type(n) h2 {
+    justify-content: center;
+  }
+  .tree-columns .col:nth-of-type(n) .item:nth-of-type(n) h2 img {
+    display: none;
+  }
+}
 .positioned-block > .container .info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1rem 3rem 3rem;
+  width: 100vw;
+  box-sizing: border-box;
 }
 .positioned-block > .container .info p {
   width: 50rem;
