@@ -6,6 +6,7 @@ body {
   overscroll-behavior-y: none;
   background-color: #000;
   font-size: 12px;
+  overflow-x: scroll;
 }
 html *,
 body * {
