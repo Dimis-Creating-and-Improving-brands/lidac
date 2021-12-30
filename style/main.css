@@ -160,6 +160,23 @@ body a.btn {
   width: 100%;
   object-fit: contain;
 }
+@media (max-width: 1440px) {
+  .tree-columns .col:first-of-type .item:nth-of-type(1) {
+    left: 2rem !important;
+  }
+  .tree-columns .col:first-of-type .item:nth-of-type(2) {
+    margin-right: -20rem !important;
+  }
+  .tree-columns .col:last-of-type .item:nth-of-type(1) {
+    right: 4rem !important;
+  }
+  .tree-columns .col:last-of-type .item:nth-of-type(2) {
+    margin-right: -15rem !important;
+  }
+  .tree-columns .col:last-of-type .item:nth-of-type(4) {
+    right: 0;
+  }
+}
 .positioned-block > .container .info {
   display: flex;
   flex-direction: column;

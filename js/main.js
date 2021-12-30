@@ -8,7 +8,7 @@ const onResize = _ => {
 
 const onScroll = _ => {
     const bottomY = window.scrollY + window.innerHeight;
-    if (bottomY - 50 > positioned.length * window.innerHeight) {
+    if (bottomY - 30 > positioned.length * window.innerHeight) {
         positioned.forEach(block => {
             block.style.position = `static`;
         })
@@ -17,6 +17,7 @@ const onScroll = _ => {
             const height = block.clientHeight;
             const opacity = ((height * (index + 1)) - scrollY) / height;
             if (opacity <= 1.2 && opacity >= 0.9) block.classList.add('animated');
+            block.style.pointerEvents = opacity < 0.3 ? 'none' : 'unset';
             block.style.position = `fixed`;
             block.style.opacity = `${opacity}`;
         })
