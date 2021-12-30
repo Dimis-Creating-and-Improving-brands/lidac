@@ -454,4 +454,9 @@ body a.btn {
 .block-5 p:first-of-type {
   color: #FFFFFF;
 }
+.gradient {
+  background: -webkit-linear-gradient(left, #00B5EF, #1E3063);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 /*# sourceMappingURL=main.css.map */
