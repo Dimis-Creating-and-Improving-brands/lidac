@@ -253,6 +253,7 @@ body a.btn {
   padding: 1rem 3rem 3rem;
   width: 100vw;
   box-sizing: border-box;
+  margin-inline: auto;
 }
 .positioned-block > .container .info p {
   width: 50rem;
@@ -438,6 +439,44 @@ body a.btn {
 .block-3 p:first-of-type {
   color: #FFFFFF;
 }
+.block-4 {
+  height: auto;
+  padding-block: 8rem;
+}
+.block-4 .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 4rem;
+  max-width: 100%;
+}
+.block-4 .grid img {
+  margin: auto;
+  max-height: 10rem;
+  max-width: 15rem;
+}
+@media (max-width: 1024px) {
+  .block-4 .grid img {
+    margin: auto;
+    max-height: 8rem;
+    max-width: 12.5rem;
+  }
+}
+@media (max-width: 840px) {
+  .block-4 .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .block-4 .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 400px) {
+  .block-4 .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .block-5 {
   height: auto;
   padding-block: 8rem;
@@ -458,6 +497,7 @@ body a.btn {
   font-size: 2.25rem;
   color: #FFFFFF;
   margin-block: 0 2.5rem;
+  text-align: center;
 }
 .block-5 p {
   font-size: 1.5rem;
