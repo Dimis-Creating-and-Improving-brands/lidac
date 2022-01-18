@@ -3,10 +3,9 @@ html,
 body {
   margin: 0;
   padding: 0;
-  overscroll-behavior-y: none;
   background-color: #000;
   font-size: 12px;
-  overflow-x: scroll;
+  overflow-y: scroll;
 }
 html *,
 body * {
@@ -78,6 +77,7 @@ body a.btn {
   left: 0;
   z-index: var(--index);
   background-color: #000000;
+  pointer-events: none !important;
 }
 .positioned-block .container {
   position: relative;
