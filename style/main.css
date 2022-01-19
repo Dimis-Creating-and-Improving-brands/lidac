@@ -119,7 +119,7 @@ body a.btn {
   padding-inline: 1.5rem;
 }
 .positioned-block:nth-of-type(3) h1 {
-  font-size: 1.875rem;
+  font-size: 3rem;
   line-height: 1.5;
   text-align: center;
   color: #0BB0E3;
@@ -222,6 +222,14 @@ body a.btn {
     box-sizing: border-box;
     height: auto;
   }
+  .tree-columns .col .item > h2,
+  .tree-columns .tree .item > h2 {
+    font-size: 1.875rem;
+  }
+  .tree-columns .col .item > p,
+  .tree-columns .tree .item > p {
+    font-size: 1.125rem;
+  }
   .tree-columns .col img,
   .tree-columns .tree img {
     width: 100%;
@@ -292,6 +300,9 @@ body a.btn {
 .block * {
   z-index: 1;
 }
+.block-1 {
+  min-height: 55rem;
+}
 .block-1 h1 {
   font-size: 4rem;
   line-height: 1.3;
@@ -311,6 +322,14 @@ body a.btn {
   margin-bottom: 8rem;
   max-width: 100%;
   margin-top: 0;
+}
+.block-1 br {
+  display: none;
+}
+@media (max-width: 480px) {
+  .block-1 br {
+    display: initial;
+  }
 }
 .block-1 .cubes {
   display: flex;
@@ -385,6 +404,7 @@ body a.btn {
 }
 .block-2 {
   background: #0B0B0B;
+  min-height: 55rem;
 }
 .block-2 h1 {
   font-size: 4.125rem;
@@ -410,10 +430,20 @@ body a.btn {
 .block-2 p:first-of-type {
   color: #FFFFFF;
 }
+@media (max-width: 1024px) {
+  .block-2 h1 {
+    font-size: 3.25rem;
+  }
+}
 @media (max-width: 840px) {
   .block-2 {
     height: auto;
-    min-height: 100vh;
+  }
+  .block-2 h1 {
+    font-size: 2.75rem;
+  }
+  .block-2 p {
+    font-size: 1.25rem;
   }
 }
 .block-3 h2 {
