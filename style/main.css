@@ -323,11 +323,11 @@ body a.btn {
   max-width: 100%;
   margin-top: 0;
 }
-.block-1 br {
+.block-1 p br {
   display: none;
 }
 @media (max-width: 480px) {
-  .block-1 br {
+  .block-1 p br {
     display: initial;
   }
 }
@@ -360,6 +360,7 @@ body a.btn {
   text-align: left;
   color: #FFFFFF;
   z-index: 1;
+  text-align: center;
 }
 .block-1 .cubes .cube div span {
   display: block;
