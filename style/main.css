@@ -54,6 +54,9 @@ body a.btn {
     font-size: 16px;
   }
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 .navbar {
   position: absolute;
   z-index: 100;
