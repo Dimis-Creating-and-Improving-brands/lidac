@@ -343,6 +343,8 @@ body a.btn {
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0.25;
+  transition: opacity 0.3s;
 }
 .block-1 .cubes .cube img {
   position: absolute;
@@ -351,13 +353,6 @@ body a.btn {
   height: 100%;
   width: 100%;
   object-fit: contain;
-}
-.block-1 .cubes .cube img:last-of-type {
-  opacity: 0;
-  transition: opacity 0.5s;
-}
-.block-1 .cubes .cube:hover img {
-  opacity: 1;
 }
 .block-1 .cubes .cube div {
   font-size: 1.5rem;
@@ -370,6 +365,15 @@ body a.btn {
   display: block;
   font-size: 3rem;
   font-weight: 500;
+}
+.block-1 .cubes.c1 .cube:nth-child(1) {
+  opacity: 1;
+}
+.block-1 .cubes.c2 .cube:nth-child(2) {
+  opacity: 1;
+}
+.block-1 .cubes.c3 .cube:nth-child(3) {
+  opacity: 1;
 }
 @media (max-width: 1366px) {
   .block-1 .cubes .cube {
